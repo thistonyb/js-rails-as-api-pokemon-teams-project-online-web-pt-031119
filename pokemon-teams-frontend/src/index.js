@@ -101,7 +101,7 @@ function fetchPokemonAdd(id) {
     },
     body: JSON.stringify(data)
   };
-  fetch("http://localhost:3000/pokemons", configObj)
+  return fetch("http://localhost:3000/pokemons", configObj)
     .then(response => response.json())
     .then(object => {
       console.log(object);
